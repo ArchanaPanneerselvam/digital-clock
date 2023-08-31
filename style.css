@@ -1,0 +1,337 @@
+body{
+    width: 99%;
+    background-color: #3D087B;    
+}
+.container{
+    display: flex;
+    /* border: 2px solid red; */
+    margin-left:170px;
+    margin-top: 40px;
+}
+.leftcontainer{
+     position: relative; 
+     /* display: flex; */
+    /* border: 2px solid red;  */
+
+}
+.rightcontainer{
+    /* display: flex; */
+    position: relative;
+    left:80px;
+    
+}
+.fa-solid fa-moon{
+    width: 100px;
+    height: 200px;
+}
+.card1{
+    border: 1px solid #EDEDED ;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: 410px;
+    /* height:200px; */
+    padding: 20px;
+    color: #3D087B;
+    /* position:absolute; */
+    left: 40px;
+    top: 100px;
+}
+.selectfrom{
+    border: 2px solid #EDEDED;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.wakeUp{
+    margin-left: 25px;
+}
+.lunchtime{
+    margin-left: 25px;
+}
+.nap{
+    margin-left: 25px;
+}
+.night{
+    margin-left: 40px;
+}
+#wakeUp{
+    margin-left: 42px;
+}
+#lunchtime{
+    margin-left: 60px;
+}
+#nap{
+    margin-left: 72px;
+}
+#night{
+    margin-left: 67px;
+}
+.card2{
+    width: 450px;
+    /* height: 80px; */
+    border: 1px solid #EDEDED;
+    color: #FFFFFF;
+    background-color:rgb(126, 36, 209);
+    border-radius: 10px;
+    text-align: center;
+}
+.card3{
+    display: flex;    
+}
+.button{
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #6E54EC, #CB52F8, #FC5EFF, #F1A7C5);
+    color: white;
+    font-size: 100%;
+}
+.note{
+    border: 1px solid #EDEDED;
+    width: 220px;
+    margin-left: 20px;
+    border-radius: 7px;
+    color: #F25CFE;
+    background-color:rgb(126, 36, 209);
+    /* position: relative; */
+    /* text-align: center; */
+}
+.time{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 380px;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    justify-content: space-between;
+    /* margin-left: 90px; */
+    margin-top: 20px;
+    display: flex;
+    padding: 10px;
+    z-index: 2;
+}
+.item{
+    position: absolute;
+    border-radius: 10px;
+    width: 340px;
+    height: 90px;
+    top:45px;
+    margin-left:25px;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    border: 1px solid white ;
+    z-index: -2;
+}
+.item1{
+    position: absolute;
+    border-radius: 10px;
+    width:300px;
+    height: 80px;
+    top:75px;
+    left:45px;
+    background-color: #8E53F0;
+    opacity: 0.3;
+    border: 1px solid #5F0089 ;
+    z-index: -3;
+}
+.hours{
+    width: 60px;
+    height: 70px;
+   border: 1px solid white;
+   text-align: center;
+   border-radius: 5px;
+   background-image: url(./timeline.png);
+  
+
+}
+.minutes{
+    width: 60px;
+    height: 70px;
+   border: 1px solid white;
+   border-radius: 5px;
+   text-align: center;
+   background-image: url(./timeline.png);
+}
+.seconds{
+    width: 60px;
+    height: 70px;
+   border: 1px solid white;
+   text-align: center;
+   border-radius: 5px;
+   background-image: url(./timeline.png);
+}
+.ampm{
+    width: 60px;
+    height: 70px;
+   border: 1px solid white;
+   text-align: center;
+   border-radius: 5px;
+   background-image: url(./am\ bg.png);
+}
+.card4{
+    height: 60px;
+    width: 400px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    color: #8E53F0;
+    border: 1px solid #EDEDED;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+#settime{
+    font-size: 20px;
+    text-align: center;
+    
+}
+.card5{
+    position: relative;
+    top: 10px;
+    /* width: 400px; */
+    /* height: 350px; */
+}
+@media screen and (max-width:500px) and (min-width:250px) {
+    body{
+        margin: 0px;
+        padding: 0;
+    }
+    .container{
+        flex-direction: column;
+        margin-left: 45px;
+        padding: 0;
+    }
+    .rightcontainer{
+        left: 0px;
+    }
+    .card3{
+        flex-direction: column;
+    }
+    .card1{
+        width: 270px;
+    }
+    .wakeUp{
+        margin-left: 0px;
+    }
+    .lunchtime{
+        margin-left: 0px;
+    }
+    .nap{
+        margin-left: 0px;
+    }
+    .night{
+        margin-left: 15px;
+    }
+    #wakeUp{
+        margin-left: 0px;
+    }
+    #lunchtime{
+        margin-left: 15px;
+    }
+    #nap{
+        margin-left: 25px;
+    }
+    #night{
+        margin-left: 20px;
+    }
+    
+    .note{
+        width: 310px;
+        margin-left: 0px;
+    }
+    .time{
+        width: 280px;
+    }
+    .button{
+        width:310px
+    }
+    .item{
+        width: 260px;
+    }
+    .item1{
+        width: 220px;
+    }
+    .card4{
+        width:310px;
+    }
+    .card2{
+        width: 310px;
+    }
+    #image{
+        width: 310px;
+    }
+    .cpy{
+        width: 300px;
+    }
+}@media screen and (max-width:360px) and (min-width:250px){
+    .container{
+        flex-direction: column;
+        margin-left: 45px;
+        padding: 0;
+        /* width: 10px; */
+    }
+    .rightcontainer{
+        left: 0px;
+    }
+    .card3{
+        flex-direction: column;
+    }
+    .card1{
+        width: 220px;
+    }
+    .wakeUp{
+        margin-left: 0px;
+    }
+    .lunchtime{
+        margin-left: 0px;
+    }
+    .nap{
+        margin-left: 0px;
+    }
+    .night{
+        margin-left: 15px;
+    }
+    #wakeUp{
+        margin-left: 0px;
+    }
+    #lunchtime{
+        margin-left: 0px;
+    }
+    #nap{
+        margin-left: 40px;
+    }
+    #night{
+        margin-left: 30px;
+    }
+    
+    .note{
+        width: 260px;
+        margin-left: 0px;
+    }
+    .time{
+        width: 240px;
+    }
+    .button{
+        width:260px
+    }
+    .item{
+        width: 220px;
+    }
+    .item1{
+        width: 180px;
+    }
+    .card4{
+        width:260px;
+    }
+    .card2{
+        width: 260px;
+    }
+    #image{
+        width: 260px;
+    }
+    .cpy{
+        width: 280px;
+    }
+}
+
+  
